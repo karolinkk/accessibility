@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<title>Page Title</title>
+</head>
+
+<body>
+<nav><!--sisu blokk-->
+
+<p>
+<h1>Alternatiivne tekst</h1>
+Tekst võiks olla kirjeldus, sellest millised näevad välja isikud pildid või milline on taust, kes on esi- ja kes tagaplaanil. Kirjeldus, mis sündmus pildil aset leiab, võiks olla pildi alltekst, mis on nähtav ja ligipääsetav kõigile. Alternatiivtekst võiks olla tagatud ka nuppudel, mis on kujutatud pildina. Sel juhul tagada pildile tekst, mida nupp teeb. Kui kasutatakse robotilõkse, siis võiksid need pildi asemel sisalda mõnda lihtsat küsimust, millele on ligipääs ekraanilugeril. Küsimus võib turvalisuse eesmärgil muutuda iga kord ning omada sisu, millele vaid inimesed oskavad vastata. 
+<h2>Halb näide:</h2>
+<figure>
+	<img src="obamajaroivas.jpg" alt="Taavi Rõivase ja Barack obama kohtumine"  width="450">
+</figure>
+<br>
+Alternatiivtekst: Taavi Rõivase ja Barack obama kohtumine.
+<br>
+Alltekst: puudub.
+<h2>Hea näide:</h2>
+<figure>
+	<img src="obamajaroivas.jpg" alt="Barack Obama ja Taavi Rõivas surumas kätte. Tegevus toimub õues ning tagataustal paistab lennuk. Mõlemad kannavad tumesiniseid ülikondasid." height="" width="450">
+	<figcaption>2014. aasta 3. septembril Taavi Rõivas kätlemas USA president Barack Obamaga.</figcaption>
+</figure>
+<br>
+Alternatiivtekst: Barack Obama ja Taavi Rõivas surumas kätte. Tegevus toimub õues ning tagataustal paistab lennuk. Mõlemad kannavad tumesiniseid ülikondasid.
+<br>
+Alltekst: 2014. aasta 3. septembril  Taavi Rõivas kätlemas USA president Barack Obamaga.
+</p>
+
+<br>
+<p>
+<h1>Juurdepääsetavus klaviatuuri abil</h1>
+Oluline on koodis kasutada õigetes kohtades õigeid märgendeid (tag). Kindlasti vältida olukordi, kus on nõutud kasutajalt hiire kasutamist (mousedown ja mouseup event-id).
+<h2>Halb näide:</h2>
+Pealkirjad on suured ja värvilised, kuid koodis puudub pealkirja tähistus ("heading"), menüü avaneb vaid hiire peale liigutamisel.
+<p style="color:#990099; font-weight: bold; font-size:20px;">
+See on halb pealkiri
+</p>
+<h2>Hea näide:</h2>
+Pealkirjad on tähistatud sobiva taseme pealkirjana, lingid on tähistatud lingina, listid listidena, tabelid tabelitena, nupud nuppudena jne. Kõik funktsionaalsus on klaviatuuri abil liikudes kättesaadav.
+<h3 style="color:#990099; font-weight: bold; font-size:20px;">See on hea pealkiri</h3>
+</p>
+
+<br>
+<p>
+<h1>Navigeerimine</h1>
+Kasutajatele on oluline tagada iga lehe algusesse link mis viib põhisisu juurde. Link peaks olema tagatud ka kõikidel alamlehtedel. 
+<h2>Halb näide:</h2>
+Põhisisu juurde minemise lingi puudumine.
+<h2>Hea näide:</h2>
+Iga lehel alguses ilmub klaviatuuriga liikudes link, mis viib otse sisu juurde. 
+</p>
+
+<br>
+<p>
+<h1>Loetavus</h1>
+Kasutajatele peab olema tagatud keele tuvastamine tarkvaraliselt ("lang" atribuut koodis). Lisaks sellele on oluline tagada kogu tekst ka koodis vastavalt valitud keelele, kuna seda loevad ette ekraanilugerid.
+<h2>Halb näide:</h2>
+Kui valitud keeleks on eesti keel ja otsingulahter sisaldab inglise keelset teksti. Näiteks: &lt;input title=“Enter the terms you wish to search for“&gt;
+<h2>Hea näide:</h2>
+Kui valitud keeleks on eesti keel siis kuvatakse kasutajale ka koodist nimetused eesti keeles. Näiteks: &lt;input title=“Sisestage otsingusõna“&gt;
+</p>
+
+<br>
+<p>
+<h1>Sisestusabi</h1>
+<h2>Halb näide:</h2>
+<h2>Hea näide:</h2>
+</p>
+
+<br>
+<p>
+<h1>Sisu selgus</h1>
+Kui kasutusel on uued lühendid võiks olla ka lühendi selgitus tagatud kasutajale. Kui visuaalselt tundub lühend paremini mõistetav võiks selgitus sisalduda vähemalt koodis. Näiteks, kui digiregistratuuri tähis on „iPatsient“, siis kuuldes antud sõna vaid heliliselt ei ole see arusaadav ning tuleks tagada koodis lisaks veel selgitus, et tegemist on digiregistratuuriga. Juhul, kui on kasutatud kirjavahemärke täpsustava info edastamiseks, siis tuleb kasutajat teavitada sellest. Ekraanilugeritel on võimalik sümbolite ettelugemine välja lülitada, mis juhul ei teavitata kasutajat tekstist sisalduvatest märkidest (sh punktid, tärnid, küsimärgid, komad jne). Kasutaja teavitamine sümbolite kasutamisest on vajalik selleks, et ekraanilugeja kasutajad saaksid vastava funktsionaalsuse sisse lülitada.
+<h2>Halb näide:</h2>
+Tabeli all on täpsustav tekst „* vastuvõtt 2x kuus“.
+<h2>Hea näide:</h2>
+Tabeli all täpsustav tekst „Tärn tähistab, et vastuvõtt toimub 2 korda kuus“. 
+</p>
+
+<br>
+<p>
+<h1>Loogilisus</h1>
+Oluline on tagada üheselt mõistetavad ning piisavalt selged pealkirjad peamenüüs. Vältida pealkirjade üleküllust ning liigset treppimist, kus alammenüüdel on omakorda alammenüüd. Veebilehe külastajale olulisemad asjad tuleks esitada eraldi kirjena peamenüüs, et ei peaks pikalt otsima. Tähelepanu tuleks pöörata ka sisu ja pealkirja kokku sobivusele, et mitte eksitada lugejat. Vältida tuleks ka linkide menüüsse lisamist mõnel alamlehel, kasutajad ei kontrolli menüüd iga kord uuesti läbi.
+<h2>Halb näide:</h2>
+Peamenüüst alustades teekond, „Patsiendile ja lähedasele“ -> „Tasulised teenused“ -> „Tasuliste teenuste hinnakiri“ 
+<h2>Hea näide:</h2>
+Peamenüüs pealkiri „Hinnakiri“.
+</p>
+
+<br>
+<p>
+<h1>Tähtsa info esimesena kuvamine</h1>
+ Tuleks pöörata tähelepanu olulise info esiletõstmisele. Ekraanilugeri kasutajate jaoks on oluline, et infot ei esitataks enne esimese taseme pealkirju, kuna sel juhul võib info märkamata jääda. Kasutajad kasutavad navigeerimisel kiirklahvide kombinatsioone ning liiguvad enamasti mööda pealkirju. Veel tuleks tagada otsingu kasutajatele kõige värskem ning otsingusõnale sarnasem informatsioon esmajärjekorras.
+<h2>Halb näide:</h2>
+Enne esimese taseme pealkirju esitatakse olulised lingid.
+<h2>Hea näide:</h2>
+Kogu info esitatakse peale esimese taseme pealkirju.
+</p>
+
+<br>
+<p>
+<h1>Tabelite loetavus </h1>
+Tabelites info esitamisel tuleks silmas pidada, et tabelis ei sisalduks liialt tühja ruumi. 
+Tabeli laius peaks olema nii kitsas kui võimalik ja nii lai kui vajalik, 
+et kasutajal ei tekiks võimalust kaotada järg samal real oleva info lugemisel. 
+Tabel tuleks esitada nähtavate piirjoontega, et oleks kergem ridu eristada. 
+Tabeliga seonduv lisainformatsioon tuleks esitada tabelile võimalikult lähedale, 
+et oleks tabeliga seostatav.
+<h2>Halb näide:</h2>
+Piirjoonte puudumine, palju tühja ruumi, täpsustav info tabelist eemal.
+<table class="small-table">
+  <tr>
+    <th>Teenus</th>
+    <th>Hind (EUR)</th> 
+  </tr>
+  <tr>
+    <td>Eriarsti konsultatsioon</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Ämmaemanda vastuvõtt</td>
+    <td>30</td> 
+  </tr>
+  <tr>
+    <td>Toitumisnõustamine</td>
+    <td>35</td> 
+  </tr>
+</table>
+<table class="bordered-table big-table">
+  <tr>
+    <th>Teenus</th>
+    <th class="text-right">Hind (EUR)</th> 
+  </tr>
+  <tr>
+    <td>Eriarsti konsultatsioon</td>
+    <td class="text-right">50</td>
+  </tr>
+  <tr>
+    <td>Ämmaemanda vastuvõtt</td>
+    <td class="text-right">30</td> 
+  </tr>
+  <tr>
+    <td>Toitumisnõustamine</td>
+    <td class="text-right">35</td> 
+  </tr>
+</table>
+<h2>Hea näide:</h2>
+Piirjoonte olemasolu, tabeli suurus valitud vastavalt teksti pikkusele, mis vaja tabelisse mahutada ning lisainfo esitatud tabeli vahetus kauguses.
+<table class="bordered-table small-table" >
+  <tr>
+    <th>Teenus</th>
+    <th>Hind (EUR)</th> 
+  </tr>
+  <tr>
+    <td>Eriarsti konsultatsioon</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Ämmaemanda vastuvõtt</td>
+    <td>30</td> 
+  </tr>
+  <tr>
+    <td>Toitumisnõustamine</td>
+    <td>35</td> 
+  </tr>
+</table>
+</p>
+
+<br>
+<p>
+<h1>Instruktsioonid</h1>
+Kasutajatele tuleks tagada instruktsioonid erinevate lehe dünaamiliste osade avamise ning sulgemise kohta. 
+<h2>Halb näide:</h2>
+Instruktsioonide puudumine.
+<h2>Hea näide:</h2>
+Instruktsiooni tagamine, näiteks: „Liikuva küljemenüü sulgemiseks vajutage mõnele teisele komponendile või klikake taustal.“
+</p>
+
+<br>
+<p>
+<h1>Kirjastiil</h1>
+kirja hea loetavuse tagamiseks tuleks vältida „rasvaselt“ esitatud teksti ning kaldkirja. Samuti tuleks vältida kirjastiili kasutamist, mis teevad tähtede eristamise raskeks kuna tähed on liiga paksud, üksteisele liiga lähedal või kursiivis. Nõue on oluline eelkõige vaegnägijate jaoks.
+<h2>Halb näide:</h2>
+<em>„rehabilitatsioon“</em>, <strong>„rehabilitatsioon“</strong>
+<h2>Hea näide:</h2>
+„rehabilitatsioon“
+</p>
+
+<br>
+<p>
+<h1>Dünaamiliste komponentide kujundus</h1>
+Mugava hiirega liikumise tagamiseks tuleks esitada dünaamilised komponendid (k.a alammenüüd) piisava suurusega. Menüüd või teised veebilehe komponendid, mis avanevad hiire liigutusele, tuleks tagada piisavalt suure pinnaga, et kasutaja kogemata „maha“ ei läheks. Eelistada tuleks komponentide esitamine pigem vertikaalselt kui horisontaalselt, sest nii on kasutajal vähem liikumist. Nõue on oluline eelkõige vaegnägijate jaoks, kes kasutavad ekraanisuurendusprogramme.
+<h2>Halb näide:</h2>
+Kursori peale liigutamisel avaneb pikk ja kitsas horisontaalne alammenüü, mille peal on raske kursoriga püsida.
+<h2>Hea näide:</h2>
+Kursori peale liigutamisel avaneb vertikaalne menüü, kus peal on parajalt ruumi liikuda kursoriga ringi.
+</p> 
+	
+</nav>
+
+</body>
+</html>
+

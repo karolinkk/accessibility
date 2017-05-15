@@ -1,0 +1,43 @@
+<h1>Eristatavus</h1>
+<p>Tekst peab olema taustast eristatav. Nõue on oluline värvipimedate jaoks ning muudab loetavuse paremaks ka tavakasutajatele.</p>
+
+<h2>Värv kui eristamisvahend:</h2>
+<p>Värvi ei tohi kasutada kui ainsat eristamisvahendit, näiteks kohustuslike väljade tähistamiseks ei piisa vaid punasest värvist. Fookuses oleva lingil on soovitatav lisaks erinevale taustavärvile või teksti värvile kuvada ka joon all.</p>
+<div class="left">
+	<h3>Halb näide:</h3>
+	<p>Vormidel kohustuslikud väljad tähistatud vaid punase värvusega ning muud tähistused puuduvad. Tuleks tähelepanu pöörata ka kasutaja teavitamisele vigadest. Kui kasutaja sisestab vigase sisendi, siis tuleks teavitada tekstiga mitte värviga. Järgnev näide kujutab kasutajasisendi lahtreid, millest punase taustaga lahtrite täitmine on kohustuslik ning rohelised on vabatahtlikud:</p>
+	Eesnimi: <input type="text" name="firstname" style="background-color: #ffe6e6">
+	<p>
+	Perenimi: <input type="text" name="lastname" style="background-color:  #ecf9ec">
+	</p>
+</div>
+<div class="right">
+	<h3>Hea näide:</h3>
+	<p>Vormidel kohustuslikud väljad tähistatud sõnaga "kohustuslik" või tärniga, mille tähendus on selgitatud. Järgnev näide kujutab seda, kuidas peaks tähistama kohustuslikke lahtreid nii, et ka ekraanilugeri kasutaja saaks informatsiooni kätte. Lisaks võib lahtritele lisaka ka erinevad värvused. Näiteks:
+	</p>
+	<p>
+	<label for="firstname">Eesnimi*:</label>
+	<input type="text"  id="firstname" >
+	<br>
+	<label for="lastname">Perenimi:</label>
+	<input type="text"  id="lastname" >
+	<br>
+	Tärniga tähistatud väljad on kohustuslikud.
+	</p>
+</div>
+
+<h2>Kontrast:</h2>
+<p>Teksti ja tausta kontrastisuhe peaks olema vähemalt 4,5:1. Kontrasti vastavust saab kontrollida järgneval veebilehel: <a href="http://leaverou.github.io/contrast-ratio/#">http://leaverou.github.io/contrast-ratio/#</a></p>
+<div class="left">
+	<h3>Halb näide:</h3>
+	<p>Kontrastisuhe jääb alla 4,5:1. Näiteks:</p>
+	<p style="background-color: #bfb89e; color:#857f186; padding: 3px 14px; ">Halvasti loetav tekst
+	</p>
+</div>
+<div class="right">
+	<h3>Hea näide:</h3>
+	<p>Kontrastisuhe kõikidel veebilehe komponentidel (sh menüüs, küljepaneelil, sisus, jaluses jne) on üle 4,5:1. Näiteks:
+	</p>
+	<p style="background-color: #000099; color:#ffffff; padding: 3px 14px;">Hästi loetav tekst
+	</p>
+</div>

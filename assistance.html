@@ -1,0 +1,104 @@
+<h1>Sisestusabi</h1>
+<p>Kasutajasisendi nõudmisel tuleb tagada sisestusabi. Nõue on oluline kõigi kasutajate jaoks.</p>
+<h2>Veast teavitamine:</h2>
+<p>Kui kasutaja sisestab lahtrisse ebasobiva sümboli või vales formaadis info, siis tuleb kasutajat sellest teavitada. Kui kohustuslik väli jäi täitmata tuleb samuti kasutajat teavitada täitmata ununenud väljast.</p>
+<div class="left">
+	<h2>Halb näide:</h2>
+	<p>Kasutaja saab e-maili lahtrisse sisestada meiliaadressi kasutamata „@“ (ätt) sümbolit. Kasutaja teeb lahtrisse sisestamisel vea, vormi sisu ei saadeta ära, kuid kasutajat ei teavitata, kus viga esines. Esimeses näites ei kontrollita meiliaadressi sisestamisel kasutatud sümboleid ega mustreid,  kontrollitakse ainult, et kohustuslikud väljad oleksid täidetud. Teises näites kontrollitakse kohustuslike väljade täitmist ning ka sisestatud meiliaadressi formaati, kuid ei teavitata mis viga täpselt esines ja kus täpsemalt (kasutatakse universaalset veateavitust).</p>
+	<p> 
+		<form onsubmit="return sendBadExample();">
+			<p>
+				<label for="name">Eesnimi*: <span id=""></span></label>
+				<br />
+				<input type="text"  id="name" />
+			</p>
+			<p>
+				<label for="familyname">Perenimi:</label>
+				<br />
+				<input type="text"  id="familyname" />
+			</p>
+			<p>
+				<label for="email">Meiliaadress*:</label>
+				<br />
+				<input type="text"  id="email" />
+			</p>
+			Tärniga tähistatud väljad on kohustuslikud.
+			<br>
+			<p id="error"></p>
+			<p id="success"></p>
+			<button type="submit" style="padding: 3px 14px; background-color: #00ace6;">Saada</button>
+		</form>
+	</p>
+	<br />
+	<p> 
+		<form name="personalInformationForm" onsubmit="return sendBadExample2();">
+			<p>
+				<label for="name">Eesnimi*:</label>
+				<br />
+				<input type="text"  id="name" />
+			</p>
+			<p>
+				<label for="familyname">Perenimi:</label>
+				<br />
+				<input type="text"  id="familyname" />
+			</p>
+			<p>
+				<label for="email">Emailiaadress*:</label>
+				<br />
+				<input type="text"  id="email" />
+			</p>
+			Tärniga tähistatud väljad on kohustuslikud.
+			<br>
+			<p id="errorRequiredField"></p>
+			<p id="errorValidation"></p>
+			<p id="successNote"></p>
+			<button type="submit" style="padding: 3px 14px; background-color: #00ace6; ">Saada</button>
+		</form>
+	</p>
+</div>
+<div class="right">
+	<h2>Hea näide:</h2>
+	<p>Kuupäeva ja e-maili formaadid (ja muud kontrollitava sisuga formaadid) on kontrollitud.</p>
+	<p> 
+		<form name="informationForm" onsubmit="return sendGoodExample();">
+			<p>
+				<label for="name">Eesnimi*:</label>
+				<br />
+				<input type="text"  id="name" />
+			</p>
+			<p id="EmptyFieldErrorName"></p>
+			<p id="validationErrorName"></p>
+			<p>
+				<label for="familyname">Perenimi:</label>
+				<br />
+				<input type="text"  id="familyname" />
+			</p>
+			<p>
+				<label for="email">Meiliaadress*:</label>
+				<br />
+				<input type="text"  id="email" />
+			</p>
+			<p>Tärniga tähistatud väljad on kohustuslikud.</p>
+			<p id="EmptyFieldErrorEmail"></p>
+			<p id="validationErrorEmail"></p>
+			<p id="successNoteExample"></p>
+			<button type="submit" style="padding: 3px 14px; background-color:  #00ace6; ">Saada</button>
+		</form>
+	</p>
+</div>
+<h2>Otsingu kasutamisel soovituste tagamine:</h2>
+<p>Kasutajatele tuleks tagada soovitused, mis põhjusel võis tulla null vastet. Tuleks pöörata tähelepanu ka sellele, et soovitused ilmuksid kasutaja valitud keeles.</p>
+<div class="left">
+	<h2>Halb näide:</h2>
+	<p>Otsingu tulemuseks tuleb: „0 vastet leitud“. Järgnev näide on vaid näidis vastuste kuvamiseks ning ei sisalda päris otsingu funktsionaalsust. Näite kuvamiseks tuleb vajutada "otsi" nuppu:</p>
+	<input type="text" title="Sisestage otsitav sõna" placeholder="Sisestage otsitav sõna.." >
+	<button onclick="searchBadExampleFunction()" style="padding: 3px 14px; background-color: #83c985;">Otsi</button>
+	<p id="showTextBadExample"></p>
+</div>
+<div class="right">
+	<h2>Hea näide:</h2>
+	<p>Otsingu vastete mitte leidmisel tuleb vastuseks ka soovitused kasutajale, mis võis otsingusõna sisestamisel valesti minna. Järgnev näide on vaid näidis vastuste kuvamiseks ning ei sisalda päris otsingu funktsionaalsust. Näite kuvamiseks tuleb vajutada "otsi" nuppu:</p>
+	<input type="text" title="Sisestage otsitav sõna" placeholder="Sisestage otsitav sõna.." >
+	<button onclick="searchGoodExampleFunction()" style="padding: 3px 14px; background-color: #83c985;">Otsi</button>
+	<p id="showTextGoodExample"></p>
+</div>

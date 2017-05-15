@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="style.css">
+<title>Page Title</title>
+</head>
+
+<body tabindex="0">
+<nav>
+<a href="javascript:jumpToContent()" id="skip">Mine otse sisu juurde</a>
+<ul class="menu">
+	<li> <!-- class=menu panna ul-i kulge?-->
+		<a href="#main" onclick="return getContent('main')"><span>Avaleht</span></a> <!-- pane mingi norm nimetus või ikoon koos alt tekstiga-->
+	</li>
+	<li>
+		<a href="#alternativeText"  onclick="return getContent('alternativeText')"><span>Alternatiivne tekst</span></a>
+	</li>
+	<li>
+		<a href="#perceptibility" onclick="return getContent('perceptibility')"><span>Tajutavus</span></a>
+	</li>
+	<li>
+		<a href="#contrast"  onclick="return getContent('contrast')"><span>Eristatavus</span></a>
+	</li>
+	<li>
+		<a href="#keyboard" onclick="return getContent('keyboard')"><span>Juurdepääsetavus klaviatuuri abil</span></a>
+	</li>
+	<li>
+		<a href="#navigation"  onclick="return getContent('navigation')"><span>Navigeerimine</span></a>
+	</li>
+	<li>
+		<a href="#readability"  onclick="return getContent('readability')"><span>Loetavus</span></a>
+	</li>
+	<li>
+		<a href="#predictability" onclick="return getContent('predictability')"><span>Ettearvatavus</span></a>
+	</li>
+	<li>
+		<a href="#assistance"  onclick="return getContent('assistance')"><span>Sisestusabi</span></a>
+	</li>
+	<li>
+		<a href="#understandability" onclick="return getContent('understandability')"><span>Selge sisu</span></a>
+	</li>
+	<li>
+		<a href="#logic" onclick="return getContent('logic')"><span>Loogilisus</span></a>
+	</li>
+	<li>
+		<a href="#importantInfoFirst"  onclick="return getContent('importantInfoFirst')"><span>Tähtsa info esimesena kuvamine</span></a>
+	</li>
+	<li>
+		<a href="#tableLayout"  onclick="return getContent('tableLayout')"><span>Tabelite kujundus</span></a>
+	</li>
+	<li>
+		<a href="#instructions"  onclick="return getContent('instructions')"><span>Instruktsioonid</span></a>
+	</li>
+	<li>
+		<a href="#font" onclick="return getContent('font')"><span>Kirjastiil</span></a>
+	</li>
+	<li>
+		<a href="#dynamicDesign" onclick="return getContent('dynamicDesign')"><span>Dünaamiliste komponentide esitamine</span></a>
+	</li>
+</ul>
+</nav>
+
+<div id="content" tabindex="0">
+</div>
+
+<script src="script.js" type="text/javascript"></script>
+
+</body>
+</html>

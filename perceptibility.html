@@ -1,0 +1,49 @@
+<h1>Tajutavus</h1>
+<p>Tarkvaraliselt peab olema võimalik kindlaks teha sisu struktuur, et ekraanilugeri kasutajad tajuksid seda mida nägijad tajuvad.</p>
+
+<h2>Ankeedid ja vormid:</h2>
+<p>Väljad peavad olema tähistatud koodis vastavalt (&lt;label&gt;).</p>
+<div class="left">
+	<h3>Halb näide:</h3>
+	<p>Vormidel puudub tähistus kasutajalt oodatava sisendi kohta. Alloleval näitel puudub "label", kuid on tagatud "placeholder", mida aga ei pruugi kõik ekraanilugemisprogrammi ette lugeda. Näiteks:</p>
+	<input placeholder="Eesnimi" type="text">
+</div>
+<div class="right">
+	<h3>Hea näide:</h3>
+	<p>Vormide lahtrid, kus oodatakse kasutajasisendit, on tähistatud tekstiga mida oodatakse. Alloleval näitel on tagatud "label", võib lisaks panna juurde ka "placeholderi" ning peita "label" nii, et visuaalselt paistab vaid "placeholder", kuid ekraanilugemisprogrammi kasutajatele loetakse siiski ette ka "label". Näiteks:</p>
+	<label for="firstname">Eesnimi:</label>
+	<input type="text" id="firstname">
+</div>
+
+<!--<h2>Kohustuslikud väljad:</h2>
+<p>Peavad olema tähistatud sõnaga ’kohustuslik’ või tärniga, mille tähendus on selgitatud vormi läheduses.</p>
+<div class="left">
+	<h3>Halb näide:</h3>
+	<p>Vormidel kohustuslikud väljad tähistatud vaid punase värvusega. Näiteks:
+	</p>
+	Eesnimi: <input type="text" name="firstname" style="background-color: #ffe6e6">
+	<br>
+	Perenimi: <input type="text" name="lastname" style="background-color:  #ecf9ec">
+</div>
+<div class="right">
+	<h3>Hea näide:</h3>
+	<p>Vormidel kohustuslikud väljad tähistatud tärniga või sõnaga "kohustuslik" ning tärni tähendus on selgitatud. Näiteks:</p>
+	<label for="firstname">Eesnimi*:</label>
+	<input type="text"  id="firstname" >
+	<br>
+	<label for="lastname">Perenimi:</label>
+	<input type="text"  id="lastname" >
+	<br>
+	Tärniga tähistatud väljad on kohustuslikud.
+</div>-->
+
+<h2>Tekst mitmes veerus:</h2>
+<p>Tarkvaraliselt peab olema võimalik lugeda sisu tähenduslikus järjekorras.</p>
+<div class="left">
+	<h3>Halb näide:</h3>
+	<p>Tekst on esitatud veergudena, mis asuvad kõrvuti ning iga veerg omab pealkirja. Pealkirjad loetakse kõik järjest ette, kuna asuvad nö ühel real ning siis loetakse sisu ette. Pealkirjad pole tekstiga seostatavad. Probleem tekib siis, kui koodis on elemendid esitatud vales järjekorras, näiteks pealkirjad on pandud järjest ning siis alles tekstilõigud.</p>
+</div>
+<div class="right">
+	<h3>Hea näide:</h3>
+	<p>Tekst on esitatud veergudena, mis asuvad kõrvuti. Liikudes klaviatuuriga loetakse ette info veeru kaupa, esimesena loetakse vasakul asuva veeru pealkiri ning siis sisu, seejärel parempoolse veeru pealkiri ja siis sisu. Õige esituse jaoks tuleb informatsioon koodis esitada vastavalt lugemisjärjekorrale ehk teksti pealkiri ja siis sisu, seejärel järgmise teksti pealkiri ja siis sisu.</p>
+</div>
